@@ -131,7 +131,7 @@ namespace WindowsFormsApp1
 
             for (int i = 1; i <= N; i++)
             {
-                sum += (Math.Pow(-1, i) / Math.Cos(i * x)) / i * i;
+                sum += (Math.Pow(-1, i) * Math.Cos(i * x)) / (i * i);
             }
 
             return ((Math.PI * Math.PI) / 2) + 4 * sum;
